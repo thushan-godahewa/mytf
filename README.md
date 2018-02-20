@@ -27,5 +27,10 @@ Another key feature of this framework is the ability to externalize the properti
 ## Running tests:
 1. Open command window
 2. Navigate to the project root
-3. Exceute the maven goal as  mvn -Dmytf.env=sys-test-env clean test -Dtest=com.tg.qa.mytf.api.test.SubmitBankDetailsVerifyTest
+3. Exceute the maven goal as:
+
+mvn -Dmytf.env=sys-test-env clean test -Dtest=com.tg.qa.mytf.api.test.SubmitBankDetailsVerifyTest
+
+Here, "mytf.env" is the environment variable used to specify the property file that contains the target environment details. Just give the file name and do not provide the .properties extension.
+
 4. View the test report using mytf\target\cucumber-report\index.html
